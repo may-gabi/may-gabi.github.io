@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDIMENTAL</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+		<header class="header">
+			<nav class="header-nav">
+				<ul class="menu" id="menu">
+					<i class="fas fa-ellipsis-h"></i><span id="nav-bar" id="btnMenu">MENU</span> 
+					<li class="menu__item" id="Inicio"><a href="" class="menu__link">INICIO</a></li>
+					<li class="menu__item" id="Evaluacion-cognitiva"><a href="" class="menu__link">EVALUACIÓN COGNITIVA</a></li>
+					<!-- <li class="menu__item container-submenu"><a href=""></a></li>  --> 
+					<li class ="menu__item container-submenu"id="entrenamientoCognitivo">
+						<a href="#" class="menu__link" >ENTRENAMIENTO COGNITIVO<i class="fas fa-angle-down"></i></a>	
+						<ul class="submenu" id="submenu">
+							<li class="menu__link"><a href="" class="2">Juegos para la  memoria</a></li>
+							<li class="menu__link"><a href="" class="2">Juegos para la atención</a></li>
+							<li class="menu__link"><a href="" class="2">Juegos para la función ejecutiva</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="contenido1">
+			<h1>Bienvenidos a</h1> 
+				
+				<p>Ludimental</p>
+				<span> </span> 
+				<h1>Sitio web para la evaluación y entrenamiento cognitivo en personas mayores</h1> 
+				<br></br>
+				<br></br>
+				<h3>¿Eres nuevo en nuestra plataforma?</h3>
+				<button id="btn-abrir-popup1" class="btn-abrir-popup1">Regístrate </button>
+				<br></br>
+				<br></br>
+				<h3>¿Ya eres usuario?</h3>				
+				<button id="btn-abrir-popup2" class="btn-abrir-popup2">Inicia sesión</button>
+		</div>
+		<div class="contenido2">	 
+		</div>			  
+		<div class="overlay1" id="overlay1">
+			<div class="popup1" id="popup1">
+				<a href="#" id="btn-cerrar-popup1" class="btn-cerrar-popup1"><i class="fas fa-times"></i></a>
+				<h3>Regístrate</h3>
+				<h4>para comenzar con tu entrenamiento cognitivo</h4>
+				<br></br>
+				<form action="">
+					<div class="contenedor-inputs1">
+						<label for="name">
+							<span>¿Cuál es tu nombre?</span>
+							<input type="text" placeholder="Nombre">
+						</label>
+						<label for="correo">
+							<input type="email" placeholder="Correo">
+						</label>						
+					</div>
+					<input type="submit" class="btn-submit1" value="Listo, Inscribirme">
+				</form>
+			</div>
+		</div>
+		<div class="overlay2" id="overlay2">
+			<div class="popup2" id="popup2">
+				<a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fas fa-times"></i></a>
+				<h3>Inicia sesión</h3>
+				<h4>Ingresando los siguientes datos:</h4>
+				<form action="">
+					<div class="contenedor-inputs2">
+						<label for="name" class= "First-question" >
+							<span>Nombre de usuario</span>
+							<input type="text"  placeholder="Ejemplo: Ca03051994">
+						</label>
+						<label for="contraseña" class= "Second-question">
+							<span>Contraseña</span>
+							<input type="password" placeholder="Ingresa tu contraseña">
+						</label>						
+					</div>
+					<input type="submit" class="btn-submit2" value="Iniciar sesión">
+				</form>	
+			</div>	
+		</div>
+        <div class="contenido2"></div>
+		<footer class="footer">
+			<h2>Contacto</h2>
+		</footer>
+	</div>
+	<script src="javas.js"></script>
+</body>
+</html>
